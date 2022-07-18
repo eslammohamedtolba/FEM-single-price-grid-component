@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Karla', sans-serif;
+    background-color: hsl(204, 43%, 93%);
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 45%;
+    height: 65%;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    overflow: hidden;
+
+}
+main .production {
+    width: 100%;
+    height: 45%;
+    background-color: white;
+    padding: 40px;
+}
+main .production h1 {
+    color: hsl(179, 62%, 43%);
+    margin-bottom: 22px;
+}
+main .production p {
+    color: hsl(71, 73%, 54%);
+    margin-bottom: 15px;
+    font-size: 19px;
+}
+main .production div {
+    color: hsl(218, 22%, 67%)
+}
+
+
+main .paid {
+    width: 50%;
+    height: 55%;
+    background-color: hsl(179, 62%, 43%);
+    color: white;
+    padding: 35px;
+}
+main .paid h2{
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+main .paid p{
+    color: hsl(204, 43%, 93%);
+    margin-bottom: 15px;
+}
+main .paid p span {
+    font-size: 25px;
+    margin-right: 10px;
+    color: white;
+}
+main .paid .sign{
+    padding: 15px 0;
+    margin: 33px 10px 0px 0px;
+    text-align: center;
+    background-color: hsl(71, 73%, 54%);
+    border-radius: 7px;
+}
+main .paid .sign a {
+    color: white;
+    text-decoration: none;
+}
+
+
+main .us {
+    width: 50%;
+    height: 55%;
+    background-color: hsl(179deg 46% 55%);
+    color: white;
+    padding: 40px;
+}
+main .us h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+main .us pre {
+    color: #f7f7f7e8;
+    font-size: 12px;
+    margin-left: -67px;
+}
+
+
+
+@media (max-width: 375px) {
+    main {
+        flex-wrap: nowrap;
+        flex-direction: column;
+        height: 88%;
+        width: 90%;
+    }
+    main .production h1 {
+        margin-bottom: 10px;
+    }
+    main .production p {
+        margin-bottom: 10px;
+    }
+    main .production {
+        height: calc(100%/3);
+        padding: 15px;
+    }
+    main .paid {
+        width: 100%;
+        height: calc(100%/3);
+        padding: 20px;
+    }
+    main .paid h2{
+        font-size: 15px;
+        margin-bottom: 11px;
+    }
+    main .paid p{
+        color: hsl(204, 43%, 93%);
+        margin-bottom: 10px;
+    }
+    main .paid p span {
+        font-size: 25px;
+        margin-right: 10px;
+        color: white;
+    }
+    main .paid .sign{
+        padding: 15px 0;
+        margin: 20px 10px 0px 0px;
+        text-align: center;
+    }
+    main .us {
+        width: 100%;
+        height: calc(100%/3);
+        padding: 23px;
+    }
+}
